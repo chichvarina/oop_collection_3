@@ -119,7 +119,7 @@ public class Main {
 
         //Создайте Map<Integer, String>, заполните ее 10 произвольными значениями.
         //Выведите в консоль всё содержимое коллекции в порядке добавления (в формате "ключ:значение").
-        Map<Integer,String> treeMap = new TreeMap<>();
+        Map<Integer,String> treeMap = new LinkedHashMap<>();
         treeMap.put(1, "Значение 1");
         treeMap.put(2, "Значение 2");
         treeMap.put(3, "Значение 3");
