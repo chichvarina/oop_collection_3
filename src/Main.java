@@ -167,7 +167,7 @@ public class Main {
     }
 
     private static void putToMap(Map<String,Integer> map, String key, int value) throws Exception {
-        if(map.get(key)!=null && map.get(key)==value){//значения совпадают
+        if(map.get(key)!=null && map.get(key).equals(value)){//значения совпадают
             throw new Exception("В карте уже есть пара: <"+key+","+value+">");
         }else {
             map.put(key, value);
